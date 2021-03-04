@@ -19,8 +19,8 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'QuickstartJenkins-rg'
-      def webAppName = 'QuickstartApp2'
+      def resourceGroup = 'Demo-rg'
+      def webAppName = 'ParallaxLabsDemo'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'aaronduncan', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
