@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'Demo-rg'
-      def webAppName = 'ParallaxLabsDemo'
+      def webAppName = 'PLDemo3'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'DemoSP', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
